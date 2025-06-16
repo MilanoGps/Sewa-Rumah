@@ -15,7 +15,7 @@ Gunakan sidebar di kiri untuk memilih analisis:
 st.subheader("📄 Preview Dataset")
 
 try:
-    df = pd.read_csv("model/House_Rent_Dataset.csv")
+    df = pd.read_csv("Model/House_Rent_Dataset.csv")
     st.dataframe(df.head(100))  # tampilkan 100 baris pertama agar ringan
 except FileNotFoundError:
     st.warning("❌ File 'House_Rent_Dataset.csv' tidak ditemukan. Pastikan file berada di direktori yang sesuai.")
